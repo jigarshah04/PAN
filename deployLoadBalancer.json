@@ -82,8 +82,8 @@
 								"id": "[concat(variables('lbId'), '/probes/lbprobe')]"
 							},
 							"protocol": "Tcp",
-							"frontendPort": 80,
-							"backendPort": 80,
+							"frontendPort": 0,
+							"backendPort": 0,
 							"enableFloatingIP": true,
 							"idleTimeoutInMinutes": 15
 						},
