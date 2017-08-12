@@ -228,7 +228,7 @@
 	},
 	
 	"variables": {
-		"baseUrl"                  : "http://raw.githubusercontent.com/fullscale180/PAN/master",
+		"baseUrl"                  : "https://raw.githubusercontent.com/jigarshah04/PAN/master",
 		"deployStorageURL"         : "[concat(variables('baseUrl'),'/deployStorage.json')]",
 		"deployBackendURL"         : "[concat(variables('baseUrl'),'/deployBackend.json')]",
 		"deployFirewallURL"        : "[concat(variables('baseUrl'),'/deployFirewall.json')]",
