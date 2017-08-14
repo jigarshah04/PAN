@@ -156,7 +156,7 @@
 			"metadata": {
 				"description": "Name prefix of VM-Series VM in the Azure portal"
 			},
-			"defaultValue": "series-vm"
+			"defaultValue": "vm-series"
 		},
 		"firewallVmSize": {
 			"type": "string",
