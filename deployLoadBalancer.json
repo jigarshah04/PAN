@@ -81,7 +81,7 @@
 							"probe": {
 								"id": "[concat(variables('lbId'), '/probes/lbprobe')]"
 							},
-							"protocol": "Tcp",
+							"protocol": "All",
 							"frontendPort": 0,
 							"backendPort": 0,
 							"enableFloatingIP": true,
