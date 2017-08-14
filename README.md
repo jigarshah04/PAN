@@ -27,9 +27,9 @@ This CFT is released under an as-is, best effort, support policy. These scripts 
 
 ***Deploy outbound VM-Series Firewall***
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffullscale180%2FPAN%2Fmaster%2FazureDeployInfra.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigarshah04%2FPAN%2Fmaster%2FazureDeployInfra.json)
 
 ***Deploy a sample Application with separate inbound firewall and backend***
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffullscale180%2FPAN%2Fmaster%2FazureDeployApp.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigarshah04%2FPAN%2Fmaster%2FazureDeployApp.json)
 
