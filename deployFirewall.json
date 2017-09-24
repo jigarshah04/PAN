@@ -212,6 +212,10 @@
 			"type": "Microsoft.Network/publicIPAddresses",
 			"name": "[concat(parameters('mgmtPublicIPName'), copyindex())]",
 			"location": "[parameters('location')]",
+			"sku":
+			{
+        			"name": "Standard"
+			},
 			"copy": {
 				"name": "pipLoop",
 				"count": "[parameters('vmCount')]"
