@@ -45,10 +45,9 @@
 	},
 
 	"resources": [
-
 		// Setup load balancer
 		{ 
-			"apiVersion": "2015-05-01-preview",
+			"apiVersion": "2017-08-01",
 			"type": "Microsoft.Network/loadBalancers",
 			"name": "[parameters('loadBalancerName')]",
 			"location": "[parameters('location')]",
