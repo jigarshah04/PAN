@@ -51,6 +51,10 @@
 			"type": "Microsoft.Network/loadBalancers",
 			"name": "[parameters('loadBalancerName')]",
 			"location": "[parameters('location')]",
+			"sku":
+			{
+        			"name": "Standard"
+			},
 			"properties": {
 				"frontendIPConfigurations": [
 					{
