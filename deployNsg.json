@@ -69,55 +69,31 @@
         }
     },
     {
-        "apiVersion": "2016-03-30",
-        "type": "Microsoft.Network/networkSecurityGroups",
-        "name": "[variables('networkSecurityGroupName')]",
-        "location": "[resourceGroup().location]",
+        "name": "unblock_inbound_rule",   
         "properties": {
-            "securityRules": [
-                {
-                    "name": "unblock_all_tcp_rule",
-                    "properties": {
-                        "description": "unblock_all_tcp_rule",
-                        "protocol": "Tcp",
-                        "sourcePortRange": "0-65535",
-                        "destinationPortRange": "0-65535",
-                       "sourceAddressPrefix": "0.0.0.0/0",
-                        "destinationAddressPrefix": "0.0.0.0/0",
-                        "access": "Allow",
-                        "priority": 123,
-                        "direction": "Inbound"
-                   }
-                },
-                {
-                    "name": "unblock_all_tcp_outrule",
-                    "properties": {
-                        "description": "unblock_all_tcp_outrule",
-                        "protocol": "Tcp",
-                        "sourcePortRange": "0-65535",
-                        "destinationPortRange": "0-65535",
-                        "sourceAddressPrefix": "0.0.0.0/0",
-                        "destinationAddressPrefix": "0.0.0.0/0",
-                        "access": "Allow",
-                        "priority": 123,
-                        "direction": "Outbound"
-                    }
-                },
-                {
-                    "name": "unblock_all_udp_ports",
-                    "properties": {
-                        "description": "Unblock_all_udp_ports",
-                        "protocol": "Udp",
-                        "sourcePortRange": "0-65535",
-                        "destinationPortRange": "0-65535",
-                        "sourceAddressPrefix": "0.0.0.0/0",
-                        "destinationAddressPrefix": "0.0.0.0/0",
-                        "access": "Allow",
-                        "priority": 125,
-                        "direction": "Inbound"
-                    }
-                }
-            ]
+            "description": "unblock_inbound_rule",    
+            "protocol": "*",
+            "sourcePortRange": "*",    
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "*",
+            "access": "Allow",
+            "priority": 100,
+            "direction": "Inbound"
+        }
+    },    
+    {    
+        "name": "unblock_outbound_rule",   
+        "properties": {
+        "description": "unblock_outbound_outrule",
+        "protocol": "*",
+        "sourcePortRange": "*",
+        "destinationPortRange": "*",
+        "sourceAddressPrefix": "*",
+        "destinationAddressPrefix": "*",
+        "access": "Allow",
+        "priority": 100,
+        "direction": "Outbound"
         }
     }
   ],
