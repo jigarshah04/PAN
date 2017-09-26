@@ -16,8 +16,6 @@
 			},
 			"defaultValue": "ENTER A GLOBALLY UNIQUE NAME HERE"
 		},
-
-		// NSG Settings
 		"networkSecurityGroupName": {
 			"type": "string",
 			"defaultValue": "mgmt-nsg",
@@ -41,8 +39,6 @@
 			},
 			"defaultValue": "outbound-avset"
 		},
-
-		// Storage Settings
 		"storageType": {
 			"type": "string",
 			"allowedValues": [
@@ -56,8 +52,6 @@
 			},
 			"defaultValue": "Standard_LRS"
 		},
-
-		// VNet settings
 		"virtualNetworkName": {
 			"type": "string",
 			"defaultValue": "vnet",
@@ -128,8 +122,6 @@
 				"description": "CIDR for Backend WWW Network"
 			}
 		},
-
-		// Pip setttings
 		"mgmtPublicIPName": {
 			"type": "string",
 			"metadata": {
@@ -137,8 +129,6 @@
 			},
 			"defaultValue": "mgmt-pip"
 		},
-		
-		// Load Balancers setttings
 		"loadBalancerName": {
 			"type": "string",
 			"metadata": {
@@ -153,9 +143,6 @@
 				"description": "This is the name of the route table"
 			}
 		},
-
-
-		// VM settings
 		"firewallModel": {
 			"type": "string",
 			"defaultValue": "byol",
@@ -239,8 +226,6 @@
 	},
 
 	"resources": [
-
-		// Deploy Storage
 		{	
 			"name": "deployStorage",
 			"type": "Microsoft.Resources/deployments",
@@ -264,8 +249,6 @@
 				}
 			}
 		},
-
-		// Deploy NSG
 		{	
 			"name": "deployNsg",
 			"type": "Microsoft.Resources/deployments",
@@ -292,8 +275,6 @@
 				}
 			}
 		},
-
-		// Deploy VNet
 		{	
 			"name": "deployVnet",
 			"type": "Microsoft.Resources/deployments",
@@ -344,8 +325,6 @@
 				}
 			}
 		},
-
-		// Deploy outbound load balancer
 		{	
 			"name": "deployOutboundLoadBalancer",
 			"type": "Microsoft.Resources/deployments",
@@ -378,8 +357,6 @@
 				}
 			}
 		},
-
-		// Deploy outbound Firewall
 		{	
 			"name": "deployOutboundFirewall",
 			"type": "Microsoft.Resources/deployments",
@@ -453,8 +430,6 @@
 				}
 			}
 		},
-
-		// Setup RouteTable
 		{
 			"apiVersion": "2015-06-15",
 			"type": "Microsoft.Network/routeTables",
