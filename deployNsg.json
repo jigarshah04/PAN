@@ -65,7 +65,36 @@
                     "priority": 200,
                     "direction": "Inbound"
                 }
-            }]
+            },
+            {
+                "name": "unblock_inbound_rule",   
+                "properties": {
+                    "description": "unblock_inbound_rule",    
+                    "protocol": "*",
+                    "sourcePortRange": "*",    
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 100,
+                    "direction": "Inbound"
+                }
+            },    
+            {    
+                "name": "unblock_outbound_rule",   
+                "properties": {
+                "description": "unblock_outbound_outrule",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "*",
+                "destinationAddressPrefix": "*",
+                "access": "Allow",
+                "priority": 100,
+                "direction": "Outbound"
+                }
+            }
+        ]
         }
     }
   ],
