@@ -449,7 +449,7 @@
 					},
 					"sshKey": {
 						"value": "[parameters('sshPublicKey')]"
-					},
+					}
 				}
 			}
 		},
