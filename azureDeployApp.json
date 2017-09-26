@@ -290,6 +290,7 @@
 				}
 			}
 		},
+
 		// Deploy inbound load balancer
 		{	
 			"name": "deployInboundLoadBalancer",
