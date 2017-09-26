@@ -290,7 +290,6 @@
 				}
 			}
 		},
-
 		// Deploy inbound load balancer
 		{	
 			"name": "deployInboundLoadBalancer",
@@ -409,11 +408,10 @@
 					},
 					"sshKey": {
 						"value": "[parameters('sshPublicKey')]"
-					},
+					}
 				}
 			}
 		},
-
 		// Deploy inbound Firewall
 		{	
 			"name": "deployInboundFirewall",
@@ -484,7 +482,7 @@
 					},
 					"sshKey": {
 						"value": "[parameters('sshPublicKey')]"
-					},
+					}
 				}
 			}
 		},
