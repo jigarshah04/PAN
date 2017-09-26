@@ -221,7 +221,7 @@
 				"count": "[parameters('vmCount')]"
 			},
 			"properties": {
-				"publicIPAllocationMethod": "Dynamic",
+				"publicIPAllocationMethod": "Static",
 				"dnsSettings": {
 					"domainNameLabel":  "[concat(parameters('mgmtPublicIPDns'), copyindex())]"
 				}
