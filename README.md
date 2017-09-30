@@ -26,8 +26,10 @@ This CFT is released under an as-is, best effort, support policy. These scripts 
 * About the [VM-Series Firewall for Azure] (https://azure.paloaltonetworks.com)
 
 ***Deploy outbound VM-Series Firewall with HA Ports on an internal Azure Load Balancer Standard***
+
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigarshah04%2FPAN%2Fmaster%2FazureDeployInfra.json)
 
 ***Deploy a sample Application with separate inbound firewall and backend***
+
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigarshah04%2FPAN%2Fmaster%2FazureDeployApp.json)
 
